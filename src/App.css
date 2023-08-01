@@ -3,3 +3,22 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.link{
+  text-decoration: none;
+}
+
+.fn{
+  color: black;
+  font-family: 'Great Vibes', cursive;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+.ln{
+  color: brown;
+  font-family: 'Great Vibes', cursive;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}

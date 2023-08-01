@@ -1,0 +1,16 @@
+/* profile style */
+
+.profile{
+    display: flex;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-content{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    gap: 5px;
+    color: rgb(48, 48, 48);
+}
