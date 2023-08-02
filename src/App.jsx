@@ -5,7 +5,7 @@ import './App.css'
 import { Routes, Route, Link } from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 
 function App() {
@@ -57,6 +57,9 @@ function Profile() {
         <p>I'm JEYACHANDRAN</p>
         <p>I'm Mean stack devoloper and Motivational speeker,</p>
         <p>Everytime i work at try to my best and solve the problems.</p>
+      </div>
+      <div className="contect-me">
+        <a class="contect" href="mailto:jeyachandran1733@gmail.com"><MailOutlineIcon />Contect Me</a>
       </div>
     </div>
   );
