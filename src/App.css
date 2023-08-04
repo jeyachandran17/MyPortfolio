@@ -6,19 +6,19 @@
 
 .link{
   text-decoration: none;
+  color: dodgerblue;
+  font-weight: bold;
 }
 
 .fn{
-  color: black;
+  color: rgba(67, 243, 79, 0.884);
   font-family: 'Great Vibes', cursive;
   font-size: large;
-  font-weight: bold;
   cursor: pointer;
 }
 .ln{
-  color: brown;
+  color: rgb(242, 0, 251);
   font-family: 'Great Vibes', cursive;
   font-size: large;
-  font-weight: bold;
   cursor: pointer;
 }

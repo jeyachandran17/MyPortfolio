@@ -19,7 +19,7 @@
     flex-direction: column;
     font-size: large;
     gap: 5px;
-    color: rgb(48, 48, 48);
+
 }
 
 /* contect style */
@@ -148,19 +148,25 @@
 
 .socialmedia-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 10px;
     flex-wrap: wrap;
 }
 
 .follow-link-container{
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 
 .copyright-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.mail-container{
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -168,4 +174,10 @@
     display: flex;
     align-items: center;
     gap: 5px;    
+}
+
+.media-follow-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

@@ -17,50 +17,59 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import BrightnessHighIcon from '@mui/icons-material/BrightnessHigh';
+import Button from '@mui/material/Button';
+import { IconButton } from '@mui/material';
 
 
 
 function App() {
-
   return (
-    <div className="App">
-      <Application />
-    </div>
+      <div className="App">
+        <Application />
+      </div>
   )
 }
 
 
+
 function Application() {
-  return (
-    <div className="application">
-      <div className="navigation-container">
-        <Navigation />
-      </div>
-    </div>
-  );
-}
 
+  
+  const [show, setshow] = useState(true);
 
-function Navigation() {
+  const darkTheme = createTheme({
+  palette: {
+    mode: show ? 'dark' : 'light',
+    },
+  });
+
   return (
-    <div className="navigation">
-      <nav>
-        <AppBar style={{background:"transparent"}} position="fixed">
-          <Toolbar>
-            {/* create the links for webpage */}
-            <p><span className='fn'>Jeya</span><span className='ln'>chandran C</span></p>
-            <a className='link' href="/" style={{marginLeft:"auto"}}>Home</a>
-            <a className='link' href="#contect" style={{marginLeft:"15px"}}>Contect</a>
-          </Toolbar>
-        </AppBar>
-      </nav>
-      <div className="profile">
-        <Profile />
-        <SkillAndTools />
-        <Contect />
-      </div>
-    </div>
+    <ThemeProvider theme={darkTheme}>
+       <Paper elevation={4} >
+        <div className="navigation">
+          <nav>
+            <AppBar style={{background:"transparent"}} position="fixed">
+              <Toolbar>
+              {/* create the links for webpage */}
+                <p><span className='fn'>Jeya</span><span className='ln'>chandran C</span></p>
+                <a className='link' href="#" style={{marginLeft:"auto"}}>Home</a>
+                <a className='link' href="#contect" style={{ marginLeft: "15px" }}>Contect</a>
+                <IconButton sx={{ marginLeft: "15px" }} color="inherit" onClick={() => setshow(!show)} >{show ? <BrightnessHighIcon style={{ color: "orange" }} /> : <Brightness4Icon style={{color:"dodgerblue"}}/> }</IconButton>
+              </Toolbar>
+            </AppBar>
+          </nav>
+          <div className="profile">
+            <Profile />
+            <SkillAndTools />
+            <Contect />
+          </div>
+        </div>
+      </Paper>
+    </ThemeProvider>
   );
 }
 
@@ -93,7 +102,7 @@ function SkillAndTools() {
       
       <div className="skill-tools-image-container">
 
-        <Card variant="outlined">
+        <Card>
           <CardContent>
             <div className="skill-tools-image-box">
               <img className='iconImage' src={ReactIcon} alt="React" />
@@ -102,7 +111,7 @@ function SkillAndTools() {
           </CardContent>
         </Card>
 
-        <Card variant="outlined">
+        <Card>
           <CardContent>
             <div className="skill-tools-image-box">
               <img className='iconImage' src={NodejsIcon} alt="Node js" />
@@ -111,7 +120,7 @@ function SkillAndTools() {
           </CardContent>
         </Card>
 
-        <Card variant="outlined">
+        <Card>
           <CardContent>
             <div className="skill-tools-image-box">
               <img className='iconImage' src={MongodbIcon} alt="Mongodb" />
@@ -120,7 +129,7 @@ function SkillAndTools() {
           </CardContent>
         </Card>
 
-        <Card variant="outlined">
+        <Card>
           <CardContent>
             <div className="skill-tools-image-box">
               <img className='iconImage' src={GitIcon} alt="Git" />
@@ -129,7 +138,7 @@ function SkillAndTools() {
           </CardContent>
         </Card>
 
-        <Card variant="outlined">
+        <Card>
           <CardContent>
             <div className="skill-tools-image-box">
               <img className='iconImage' src={HTML5Icon} alt="HTML5" />
@@ -138,7 +147,7 @@ function SkillAndTools() {
           </CardContent>
         </Card>
 
-        <Card variant="outlined">
+        <Card>
           <CardContent>
             <div className="skill-tools-image-box">
               <img className='iconImage' src={CSS3Icon} alt="CSS3" />
@@ -147,7 +156,7 @@ function SkillAndTools() {
           </CardContent>
         </Card>
 
-        <Card variant="outlined">
+        <Card>
           <CardContent>
             <div className="skill-tools-image-box">
               <img className='iconImage' src={JSIcon} alt="JavaScript" />
@@ -173,7 +182,7 @@ function Contect() {
             <h3>Follow</h3>
           </div>
           <div className="follow-link-container">
-            <a href="https://github.com/jeyachandran17"><GitHubIcon fontSize='large' /></a>
+            <a href="https://github.com/jeyachandran17"><GitHubIcon fontSize='large'  /></a>
             <a href="https://www.linkedin.com/in/jeyachandran-c-604186265/"><LinkedInIcon fontSize='large' /></a>
           </div>
         </div>
