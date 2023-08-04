@@ -42,14 +42,14 @@ function Navigation() {
   return (
     <div className="navigation">
       <nav>
-      <AppBar style={{background:"transparent"}} position="static">
-        <Toolbar>
+        <AppBar style={{background:"transparent"}} position="static">
+          <Toolbar>
             {/* create the links for webpage */}
             <p><span className='fn'>Jeya</span><span className='ln'>chandran C</span></p>
             <a className='link' href="/" style={{marginLeft:"auto"}}>Home</a>
             <a className='link' href="#contect" >Contect</a>
-        </Toolbar>
-      </AppBar>
+          </Toolbar>
+        </AppBar>
       </nav>
       <div className="profile">
         <Profile />
