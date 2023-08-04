@@ -15,6 +15,10 @@ import CSS3Icon from './images/css3.png'
 import JSIcon from './images/javascript.png'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+
+
 
 
 function App() {
@@ -85,35 +89,73 @@ function SkillAndTools() {
         <h2>Skills & Tools</h2>
         <p>I know learned some tools and skills for my knowledge it's bellow..</p>
       </div>
+
+      
       <div className="skill-tools-image-container">
-        <div className="skill-tools-image-box">
-          <img className='iconImage' src={ReactIcon} alt="React" />
-          <h3>React</h3>
-        </div>
-        <div className="skill-tools-image-box">
-          <img className='iconImage' src={NodejsIcon} alt="Node js" />
-          <h3>Node js</h3>
-        </div>
-        <div className="skill-tools-image-box">
-          <img className='iconImage' src={MongodbIcon} alt="Mongodb" />
-          <h3>MongoDB</h3>
-        </div>
-        <div className="skill-tools-image-box">
-          <img className='iconImage' src={GitIcon} alt="Git" />
-          <h3>Git</h3>
-        </div>
-        <div className="skill-tools-image-box">
-          <img className='iconImage' src={HTML5Icon} alt="HTML5" />
-          <h3>HTML5</h3>
-        </div>
-        <div className="skill-tools-image-box">
-          <img className='iconImage' src={CSS3Icon} alt="CSS3" />
-          <h3>CSS3</h3>
-        </div>
-        <div className="skill-tools-image-box">
-          <img className='iconImage' src={JSIcon} alt="JavaScript" />
-          <h3>JavaScript</h3>
-        </div>
+
+        <Card variant="outlined">
+          <CardContent>
+            <div className="skill-tools-image-box">
+              <img className='iconImage' src={ReactIcon} alt="React" />
+              <h3>React</h3>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card variant="outlined">
+          <CardContent>
+            <div className="skill-tools-image-box">
+              <img className='iconImage' src={NodejsIcon} alt="Node js" />
+              <h3>Node js</h3>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card variant="outlined">
+          <CardContent>
+            <div className="skill-tools-image-box">
+              <img className='iconImage' src={MongodbIcon} alt="Mongodb" />
+              <h3>MongoDB</h3>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card variant="outlined">
+          <CardContent>
+            <div className="skill-tools-image-box">
+              <img className='iconImage' src={GitIcon} alt="Git" />
+              <h3>Git</h3>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card variant="outlined">
+          <CardContent>
+            <div className="skill-tools-image-box">
+              <img className='iconImage' src={HTML5Icon} alt="HTML5" />
+              <h3>HTML5</h3>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card variant="outlined">
+          <CardContent>
+            <div className="skill-tools-image-box">
+              <img className='iconImage' src={CSS3Icon} alt="CSS3" />
+              <h3>CSS3</h3>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card variant="outlined">
+          <CardContent>
+            <div className="skill-tools-image-box">
+              <img className='iconImage' src={JSIcon} alt="JavaScript" />
+              <h3>JavaScript</h3>
+            </div>
+          </CardContent>
+        </Card>
+
       </div>
     </div>
   );
