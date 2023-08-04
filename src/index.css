@@ -131,3 +131,43 @@
     width: 120px;
     height: 120px;
 }
+
+/* Contect style */
+
+.contect-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    gap: 20px;
+    border-top: 2px solid gray;
+}
+
+.contect-title-container{
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.follow-link-container{
+    display: flex;
+    gap: 5px;
+}
+
+.copyright-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.mail-address{
+    display: flex;
+    align-items: center;
+    gap: 5px;    
+}
