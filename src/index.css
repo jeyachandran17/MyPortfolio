@@ -2,10 +2,10 @@
 
 .profile-container{
     display: flex;
-    min-height: 80vh;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .profile{
@@ -19,7 +19,7 @@
     flex-direction: column;
     font-size: large;
     gap: 5px;
-
+    padding: 10px;
 }
 
 /* contect style */
@@ -98,7 +98,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 25px;
 }
 
 .skill-tools-title-container{
@@ -107,14 +106,16 @@
     gap: 5px;
     justify-content: center;
     align-items: center;
+    background-color: darkred;
+    padding: 10px;
 }
 
 .skill-tools-image-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 25px;
+    padding: 25px;
 }
 
 .skill-tools-image-box{
@@ -155,12 +156,6 @@
 
 .follow-link-container{
     display: flex;
-    gap: 10px;
-}
-
-.copyright-container{
-    display: flex;
-    justify-content: space-around;
     gap: 10px;
 }
 

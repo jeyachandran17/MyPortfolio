@@ -23,7 +23,7 @@ import Brightness4Icon from '@mui/icons-material/Brightness4';
 import BrightnessHighIcon from '@mui/icons-material/BrightnessHigh';
 import Button from '@mui/material/Button';
 import { IconButton } from '@mui/material';
-
+import MyImage from './images/my_image.png'
 
 
 function App() {
@@ -52,7 +52,7 @@ function Application() {
        <Paper elevation={4} >
         <div className="navigation">
           <nav>
-            <AppBar style={{background:"transparent"}} position="fixed">
+            <AppBar style={{background:"transparent"}} position="static">
               <Toolbar>
               {/* create the links for webpage */}
                 <p><span className='fn'>Jeya</span><span className='ln'>chandran C</span></p>
@@ -77,14 +77,19 @@ function Application() {
 function Profile() {
   return (
     <div className="profile-container">
-      <div className="profile-content">
-        <p>Welcome to my page...</p>
-        <p>I'm JEYACHANDRAN</p>
-        <p>I'm Mean stack devoloper and Motivational speeker,</p>
-        <p>Everytime i work at try to my best and solve the problems.</p>
+      <div className="profile-contant-conainer">
+        <div className="profile-content">
+          <p>Welcome to my page...</p>
+          <p>I'm JEYACHANDRAN</p>
+          <p>I'm Mean stack devoloper and Motivational speeker,</p>
+          <p>Everytime i work at try to my best and solve the problems.</p>
+        </div>
+        <div className="contect-me">
+          <a class="contect" href="mailto:jeyachandran1733@gmail.com"><MailOutlineIcon />Contect Me</a>
+        </div>
       </div>
-      <div className="contect-me">
-        <a class="contect" href="mailto:jeyachandran1733@gmail.com"><MailOutlineIcon />Contect Me</a>
+      <div className="profile-image-container">
+        <img src={MyImage} alt="my image"  width={250}/>
       </div>
     </div>
   );
@@ -98,8 +103,6 @@ function SkillAndTools() {
         <h2>Skills & Tools</h2>
         <p>I know learned some tools and skills for my knowledge it's bellow..</p>
       </div>
-
-      
       <div className="skill-tools-image-container">
 
         <Card>
@@ -179,21 +182,25 @@ function Contect() {
       <div className="socialmedia-container">
         <div className="media-follow-container">
           <div className="follow-title-container">
-            <h3>Follow</h3>
+            <div className="contact-logo">
+              <p><span className='fn'>Jeya</span><span className='ln'>chandran C</span></p>
+            </div>
           </div>
           <div className="follow-link-container">
+            <div className="follow-title">
+              <h3>Follow</h3>
+            </div>
+          </div>
+          <div>
             <a href="https://github.com/jeyachandran17"><GitHubIcon fontSize='large'  /></a>
             <a href="https://www.linkedin.com/in/jeyachandran-c-604186265/"><LinkedInIcon fontSize='large' /></a>
-          </div>
+          </div> 
         </div>
         <div className="mail-container">
           <h3>Chat to us</h3>
           <p className='mail-address'><MailOutlineIcon fontSize='large' />jeyachandran1733@gmail.com</p>
+          <h3>&copy; 2023 Jeyachandran C. All rights reserved.</h3>
         </div>
-      </div>
-      <div className="copyright-container">
-        <p><span className='fn'>Jeya</span><span className='ln'>chandran C</span></p>
-        <h3>&copy; 2023 Jeyachandran C. All rights reserved.</h3>
       </div>
     </div>
   );
