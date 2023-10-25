@@ -24,6 +24,9 @@ import BrightnessHighIcon from '@mui/icons-material/BrightnessHigh';
 import Button from '@mui/material/Button';
 import { IconButton } from '@mui/material';
 import MyImage from './images/my_image.png'
+import MenuIcon from '@mui/icons-material/Menu';
+
+
 
 
 function App() {
@@ -38,7 +41,6 @@ function App() {
 
 function Application() {
 
-  
   const [show, setshow] = useState(true);
 
   const darkTheme = createTheme({
@@ -55,10 +57,21 @@ function Application() {
             <AppBar style={{background:"transparent"}} position="static">
               <Toolbar>
               {/* create the links for webpage */}
-                <p><span className='fn'>Jeya</span><span className='ln'>chandran C</span></p>
-                <a className='link' href="#" style={{marginLeft:"auto"}}>Home</a>
-                <a className='link' href="#contect" style={{ marginLeft: "15px" }}>Contect</a>
-                <IconButton sx={{ marginLeft: "15px" }} color="inherit" onClick={() => setshow(!show)} >{show ? <BrightnessHighIcon style={{ color: "orange" }} /> : <Brightness4Icon style={{color:"dodgerblue"}}/> }</IconButton>
+                <div>
+                  <p><span className='fn'>Jeya</span><span className='ln'>chandran C</span></p>
+                </div>
+                <div style={{marginLeft:"auto"}}>
+                  <a className='link' href="#" >Home</a>
+                </div>
+                <div>
+                  <a className='link' href="#contect" style={{ marginLeft: "15px" }}>Contect</a>
+                </div>
+                <div>
+                  <IconButton className='themebutton' color="inherit" onClick={() => setshow(!show)} >{show ? <BrightnessHighIcon style={{ color: "orange" }} /> : <Brightness4Icon style={{ color: "dodgerblue" }} />}</IconButton>
+                </div>
+                <div sx={{ mr: 1 }}>
+                  <IconButton size="large" edge="start" color="inherit" aria-label="menu" ><MenuIcon /></IconButton>
+                </div>
               </Toolbar>
             </AppBar>
           </nav>
@@ -85,7 +98,7 @@ function Profile() {
           <p>Everytime i work at try to my best and solve the problems.</p>
         </div>
         <div className="contect-me">
-          <a class="contect" href="mailto:jeyachandran1733@gmail.com"><MailOutlineIcon />Contect Me</a>
+          <a class="contect" href="mailto:jeyachandran1733@gmail.com"><MailOutlineIcon />Contact Me</a>
         </div>
       </div>
       <div className="profile-image-container">

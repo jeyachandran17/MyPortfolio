@@ -176,3 +176,16 @@
     flex-direction: column;
     gap: 10px;
 }
+
+.menubar{
+    display: none;
+}
+
+@media (max-width:500px){
+    .link{
+        display: none;
+    }
+    .themebutton{
+        display: none;
+    }
+}

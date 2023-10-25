@@ -5,6 +5,7 @@
 }
 
 .link{
+  display: block;
   text-decoration: none;
   color: dodgerblue;
   font-weight: bold;
@@ -22,9 +23,3 @@
   font-size: large;
   cursor: pointer;
 }
-
-@media screen and (max-width:300px){
-  .navigation{
-    background-color: red;
-  }
-} 
