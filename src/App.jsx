@@ -66,41 +66,47 @@ function Application() {
        <Paper elevation={4} >
         <div className="navigation">
           <nav>
-            <AppBar style={{background:"transparent"}} position="static">
-              <Toolbar>
-              {/* create the links for webpage */}
+            <AppBar  position="static">
+              <Toolbar className='AppBar'>
                 <div>
                   <p><span className='fn'>Jeya</span><span className='ln'>chandran C</span></p>
                 </div>
                 <div style={{marginLeft:"auto"}}>
-                  <a className='link' href="#" >Home</a>
+                  <Link className='link' to="/" >Home</Link>
                 </div>
                 <div>
-                  <a className='link' href="#contect" style={{ marginLeft: "15px" }}>Contect</a>
+                  <Link className='link' to="/blog" style={{ marginLeft: "15px" }}>Blog</Link>
                 </div>
                 <div>
                   <IconButton className='themebutton' color="inherit" onClick={() => setshow(!show)} >{show ? <BrightnessHighIcon style={{ color: "orange" }} /> : <Brightness4Icon style={{ color: "dodgerblue" }} />}</IconButton>
                 </div>
                 <div sx={{ mr: 1 }} className='menu-icon' >
-                  {/* <IconButton size="large" edge="start" color="inherit" aria-label="menu" ><MenuIcon /></IconButton> */}
                   <IconButton size="large" edge="start" color="inherit" aria-label="menu" id="basic-button" aria-controls={open ? 'basic-menu' : undefined} aria-haspopup="true" aria-expanded={open ? 'true' : undefined} onClick={handleClick} ><MenuIcon /></IconButton>
                   <Menu id="basic-menu" anchorEl={anchorEl} open={open} onClose={handleClose} MenuListProps={{ 'aria-labelledby': 'basic-button',}}>
-                    <MenuItem onClick={handleClose}>Home</MenuItem>
-                    <MenuItem onClick={handleClose}>Contact</MenuItem>
+                    <MenuItem onClick={()=>navigate('/')}>Home</MenuItem>
                     <MenuItem onClick={handleClose}>Blog</MenuItem>
                   </Menu>
                 </div>
               </Toolbar>
             </AppBar>
           </nav>
-          <div className="profile">
-            <Profile />
-            <SkillAndTools />
-            <Contect />
-          </div>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/blog" element={<Blog />} />
+            </Routes>
         </div>
       </Paper>
     </ThemeProvider>
+  );
+}
+
+function Homepage() {
+  return (
+    <div className="profile">
+      <Profile />
+      <SkillAndTools />
+      <Contect />
+    </div>
   );
 }
 
@@ -206,7 +212,7 @@ function SkillAndTools() {
 
 function Contect() {
   return (
-    <div id='contect' className="contect-container">
+    <div id='contact' className="contect-container">
       <div className="contect-title-container">
         <h2>Contect Us</h2>
       </div>
@@ -234,6 +240,12 @@ function Contect() {
         </div>
       </div>
     </div>
+  );
+}
+
+function Blog() {
+  return (
+    <h3>Welcome</h3>
   );
 }
 

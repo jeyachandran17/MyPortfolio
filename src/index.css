@@ -1,3 +1,8 @@
+.AppBar{
+    /* background-color: black; */
+    background-image: linear-gradient(to top right ,black, gray);
+}
+
 /* profile style */
 
 .profile-container{
