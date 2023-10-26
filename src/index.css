@@ -181,11 +181,18 @@
     display: none;
 }
 
+.menu-icon{
+    display: none;
+}
+
 @media (max-width:500px){
     .link{
         display: none;
     }
     .themebutton{
         display: none;
+    }
+    .menu-icon{
+        display: block;
     }
 }

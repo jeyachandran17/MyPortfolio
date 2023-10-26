@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
@@ -25,7 +25,8 @@ import Button from '@mui/material/Button';
 import { IconButton } from '@mui/material';
 import MyImage from './images/my_image.png'
 import MenuIcon from '@mui/icons-material/Menu';
-
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 
 
@@ -40,6 +41,8 @@ function App() {
 
 
 function Application() {
+ 
+  const navigate = useNavigate()
 
   const [show, setshow] = useState(true);
 
@@ -48,6 +51,15 @@ function Application() {
     mode: show ? 'dark' : 'light',
     },
   });
+
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   return (
     <ThemeProvider theme={darkTheme}>
@@ -69,8 +81,14 @@ function Application() {
                 <div>
                   <IconButton className='themebutton' color="inherit" onClick={() => setshow(!show)} >{show ? <BrightnessHighIcon style={{ color: "orange" }} /> : <Brightness4Icon style={{ color: "dodgerblue" }} />}</IconButton>
                 </div>
-                <div sx={{ mr: 1 }}>
-                  <IconButton size="large" edge="start" color="inherit" aria-label="menu" ><MenuIcon /></IconButton>
+                <div sx={{ mr: 1 }} className='menu-icon' >
+                  {/* <IconButton size="large" edge="start" color="inherit" aria-label="menu" ><MenuIcon /></IconButton> */}
+                  <IconButton size="large" edge="start" color="inherit" aria-label="menu" id="basic-button" aria-controls={open ? 'basic-menu' : undefined} aria-haspopup="true" aria-expanded={open ? 'true' : undefined} onClick={handleClick} ><MenuIcon /></IconButton>
+                  <Menu id="basic-menu" anchorEl={anchorEl} open={open} onClose={handleClose} MenuListProps={{ 'aria-labelledby': 'basic-button',}}>
+                    <MenuItem onClick={handleClose}>Home</MenuItem>
+                    <MenuItem onClick={handleClose}>Contact</MenuItem>
+                    <MenuItem onClick={handleClose}>Blog</MenuItem>
+                  </Menu>
                 </div>
               </Toolbar>
             </AppBar>
@@ -205,7 +223,7 @@ function Contect() {
             </div>
           </div>
           <div>
-            <a href="https://github.com/jeyachandran17"><GitHubIcon fontSize='large'  /></a>
+            <a href="https://github.com/jeyachandran17"><GitHubIcon fontSize='large' /></a>
             <a href="https://www.linkedin.com/in/jeyachandran-c-604186265/"><LinkedInIcon fontSize='large' /></a>
           </div> 
         </div>
