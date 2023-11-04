@@ -84,7 +84,7 @@ function Application() {
                   <IconButton size="large" edge="start" color="inherit" aria-label="menu" id="basic-button" aria-controls={open ? 'basic-menu' : undefined} aria-haspopup="true" aria-expanded={open ? 'true' : undefined} onClick={handleClick} ><MenuIcon /></IconButton>
                   <Menu id="basic-menu" anchorEl={anchorEl} open={open} onClose={handleClose} MenuListProps={{ 'aria-labelledby': 'basic-button',}}>
                     <MenuItem onClick={()=>navigate('/')}>Home</MenuItem>
-                    <MenuItem onClick={handleClose}>Blog</MenuItem>
+                    <MenuItem onClick={()=>navigate('/blog')}>Blog</MenuItem>
                   </Menu>
                 </div>
               </Toolbar>
@@ -245,7 +245,9 @@ function Contect() {
 
 function Blog() {
   return (
-    <h3>Welcome</h3>
+    <div className='blog-container'>
+      <p>Welcome</p>
+    </div>
   );
 }
 
