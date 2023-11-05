@@ -27,6 +27,7 @@ import MyImage from './images/my_image.png'
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import { Blog } from './Blog';
 
 
 
@@ -239,14 +240,6 @@ function Contect() {
           <h3>&copy; 2023 Jeyachandran C. All rights reserved.</h3>
         </div>
       </div>
-    </div>
-  );
-}
-
-function Blog() {
-  return (
-    <div className='blog-container'>
-      <p>Welcome</p>
     </div>
   );
 }
