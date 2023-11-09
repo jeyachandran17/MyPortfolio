@@ -70,7 +70,7 @@ function Application() {
             <AppBar  position="static">
               <Toolbar className='AppBar'>
                 <div>
-                  <p><span className='fn'>Jeya</span><span className='ln'>chandran C</span></p>
+                  <p onClick={()=>navigate('/')}><span className='fn'>Jeya</span><span className='ln'>chandran C</span></p>
                 </div>
                 <div style={{marginLeft:"auto"}}>
                   <Link className='link' to="/" >Home</Link>
