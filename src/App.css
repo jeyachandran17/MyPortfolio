@@ -42,9 +42,46 @@
   background-color: dodgerblue;
 }
 
+.blog-titleCards{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
 .node-steps{
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  padding: 10px;
+  gap: 10px;
+  padding: 20px;
+}
+
+.nodejs-step{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nodejs{
+  width: 420px;
+  height: 300px;
+}
+
+.nodejs-text{
+  text-indent: 50px;
+}
+
+.backButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+@media (max-width:500px){
+  .nodejs{
+      height: 200px;
+      width: 250px;
+  }
 }

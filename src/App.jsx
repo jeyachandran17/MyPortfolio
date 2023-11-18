@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
@@ -27,7 +25,8 @@ import MyImage from './images/my_image.png'
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { Blog } from './Blog';
+import { Blog , NodejsInstall } from './Blog';
+
 
 
 
@@ -94,7 +93,8 @@ function Application() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/blog" element={<Blog />} />
-            </Routes>
+            <Route path="/blog-nodejs" element={<NodejsInstall />} />
+          </Routes>
         </div>
       </Paper>
     </ThemeProvider>
