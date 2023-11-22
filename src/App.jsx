@@ -25,7 +25,7 @@ import MyImage from './images/my_image.png'
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { Blog , NodejsInstall } from './Blog';
+import { Blog , NodejsInstall, GitLocalSetup } from './Blog';
 
 
 
@@ -94,6 +94,7 @@ function Application() {
             <Route path="/" element={<Homepage />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog-nodejs" element={<NodejsInstall />} />
+            <Route path="/blog-gitinstall" element={<GitLocalSetup />} />
           </Routes>
         </div>
       </Paper>

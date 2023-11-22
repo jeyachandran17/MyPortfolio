@@ -27,18 +27,36 @@ export function Blog() {
         <h3 className="blog-title">All Blogs</h3>
       </div>
       <div className="blog-titleCards">
-        <Card sx={{ maxWidth: 345 }} onClick={()=>navigate('/blog-nodejs')}>
-          <CardMedia component="img" alt="green iguana" height="140" image="https://www.section.io/engineering-education/history-of-nodejs/nodejs-use-cases-cover-image.png" />
-          <CardContent>
-            <Typography gutterBottom variant="h6" component="div"> How to install nodejs in windows</Typography>
-            <Typography variant="body2" color="text.secondary">
-              Node. js is a popular programming environment that can be used for building high-scale applications that need to support multiple concurrent requests
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button size="small" onClick={()=>navigate('/blog-nodejs')}>View</Button>
-          </CardActions>
-        </Card>
+        {/* nodejs install in windows */}
+        <div className="Blog-node-install">
+          <Card sx={{ maxWidth: 345 }} onClick={()=>navigate('/blog-nodejs')}>
+            <CardMedia component="img" alt="green iguana" height="140" image="https://www.section.io/engineering-education/history-of-nodejs/nodejs-use-cases-cover-image.png" />
+            <CardContent>
+              <Typography gutterBottom variant="h6" component="div"> How to install nodejs in windows</Typography>
+              <Typography variant="body2" color="text.secondary">
+                Node. js is a popular programming environment that can be used for building high-scale applications that need to support multiple concurrent requests
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button variant="outlined" size="small" style={{marginLeft:"auto"}} onClick={()=>navigate('/blog-nodejs')}>View</Button>
+            </CardActions>
+          </Card>
+        </div>
+        {/*  Local setup Git in windows */}
+        <div className="Blog-Git-install">
+          <Card sx={{ maxWidth: 345 }} onClick={()=>navigate('/blog-gitinstall')}>
+            <CardMedia component="img" alt="green iguana" height="140" image="https://www.20i.com/blog/wp-content/uploads/2022/08/git-blog-header-768x432.png" />
+            <CardContent>
+              <Typography gutterBottom variant="h6" component="div"> How to install Git in Local Setup </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Git helps you keep track of code changes. Git is used to collaborate on code.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button variant="outlined" size="small" style={{marginLeft:"auto"}} onClick={()=>navigate('/blog-gitinstall')}>View</Button>
+            </CardActions>
+          </Card>
+        </div>
       </div>
     </div>
   );
@@ -113,6 +131,17 @@ export function NodejsInstall(){
         <div className="backButton">
           <Button variant="outlined" onClick={()=>navigate('/blog')}>🔙</Button>
         </div>
+      </div>
+    </div>
+  );
+}
+
+
+export function GitLocalSetup(){
+  return(
+    <div className="Git-localSetup-container">
+      <div className="blog-gitLocalSetup-title">
+        <h3>How to install Git in Local Setup for Windows</h3>
       </div>
     </div>
   );
