@@ -194,6 +194,7 @@ export function GitLocalSetup(){
           <p className="git-text">✔️Select Next</p>
         </div>
         <div>
+          <p>Choose to "Use visual studio code as Git's default editor" </p>
           <img className="git" src={gitinstallpage5} alt="" />
           <p className="git-text">✔️Select Next</p>
         </div>
