@@ -64,12 +64,14 @@
   gap: 10px;
 }
 
-.nodejs{
+.nodejs,
+.git{
   width: 420px;
   height: 300px;
 }
 
-.nodejs-text{
+.nodejs-text,
+.git-text{
   text-indent: 50px;
 }
 
@@ -94,9 +96,19 @@
   background-color: red;
 }
 
+.blog-gitLocalSetup-contant{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
 @media (max-width:500px){
-  .nodejs{
+  .nodejs,
+  .git{
       height: 200px;
       width: 250px;
+      align-content: center;
   }
 }
+

@@ -160,6 +160,7 @@ export function NodejsInstall(){
 
 
 export function GitLocalSetup(){
+  const navigate = useNavigate("")
   return(
     <div className="Git-localSetup-container">
       <div className="blog-gitLocalSetup-title">
@@ -172,104 +173,103 @@ export function GitLocalSetup(){
         <div>
           <h3>Step 1:</h3>
           <p className="git-text">Visit the official Git website <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a> and download the Latest source Release. </p>
-          <img src={gitdownloadpage} alt="Git download page" />
+          <img className="git" src={gitdownloadpage} alt="Git download page" />
         </div>
         <div>
           <h3>Step 2:</h3>
-          <p>Now you need to install the Git installer on your PC. Double click on the Git installer.</p>
-          <img src={gitinstallpage1} alt="" />
-          <p>✔️Select Next</p>
+          <p className="git-text">Now you need to install the Git installer on your PC. Double click on the Git installer.</p>
+          <img className="git" src={gitinstallpage1} alt="" />
+          <p className="git-text">✔️Select Next</p>
         </div>
         <div>
-          <img src={gitinstallpage2} alt="" />
-          <p>✔️Select Next</p>
+          <img className="git" src={gitinstallpage2} alt="" />
+          <p className="git-text">✔️Select Next</p>
         </div>
         <div>
-          <img src={gitinstallpage3} alt="" />
-          <p>✔️Select Next</p>
+          <img className="git" src={gitinstallpage3} alt="" />
+          <p className="git-text">✔️Select Next</p>
         </div>
         <div>
-          <img src={gitinstallpage4} alt="" />
-          <p>✔️Select Next</p>
+          <img className="git" src={gitinstallpage4} alt="" />
+          <p className="git-text">✔️Select Next</p>
         </div>
         <div>
-          <img src={gitinstallpage5} alt="" />
-          <p>✔️Select Next</p>
+          <img className="git" src={gitinstallpage5} alt="" />
+          <p className="git-text">✔️Select Next</p>
         </div>
         <div>
-          <img src={gitinstallpage6} alt="" />
-          <p>✔️Select Next</p>
+          <img className="git" src={gitinstallpage6} alt="" />
+          <p className="git-text">✔️Select Next</p>
         </div>
         <div>
-          <img src={gitinstallpage7} alt="" />
-          <p>✔️Select Next</p>
+          <img className="git" src={gitinstallpage7} alt="" />
+          <p className="git-text">✔️Select Next</p>
         </div>
         <div>
-          <img src={gitinstallpage8} alt="" />
-          <p>✔️Select Next</p>
+          <img className="git" src={gitinstallpage8} alt="" />
+          <p className="git-text">✔️Select Next</p>
         </div>
         <div>
-          <img src={gitinstallpage9} alt="" />
-          <p>✔️Select Next</p>
+          <img className="git" src={gitinstallpage9} alt="" />
+          <p className="git-text">✔️Select Next</p>
         </div>
         <div>
-          <img src={gitinstallpage10} alt="" />
-          <p>✔️Select Next</p>
+          <img className="git" src={gitinstallpage10} alt="" />
+          <p className="git-text">✔️Select Next</p>
         </div>
         <div>
-          <img src={gitinstallpage11} alt="" />
-          <p>✔️Select Next</p>
+          <img className="git" src={gitinstallpage11} alt="" />
+          <p className="git-text">✔️Select Next</p>
         </div>
         <div>
-          <img src={gitinstallpage12} alt="" />
-          <p>✔️Select Next</p>
+          <img className="git" src={gitinstallpage12} alt="" />
+          <p className="git-text">✔️Select Next</p>
         </div>
         <div>
-          <img src={gitinstallpage13} alt="" />
-          <p>✔️Select Next</p>
+          <img className="git" src={gitinstallpage13} alt="" />
+          <p className="git-text">✔️Select Next</p>
         </div>
         <div>
-          <img src={gitinstallpage14} alt="" />
-          <p>✔️Select Next</p>
+          <img className="git" src={gitinstallpage14} alt="" />
+          <p className="git-text">✔️Select Next</p>
         </div>
         <div>
-          <img src={gitinstallpage15} alt="" />
-          <p>✔️Select Install</p>
+          <img className="git" src={gitinstallpage15} alt="" />
+          <p className="git-text">✔️Select Install</p>
         </div>
         <div>
-          <img src={gitinstallpage16} alt="" />
-          <p>Waiting for little bit time to installing process.</p>
+          <img className="git" src={gitinstallpage16} alt="" />
+          <p className="git-text">Waiting for little bit time to installing process.</p>
         </div>
         <div>
-          <img src={gitinstallpage17} alt="" />
-          <p>✔️Select Finish</p>
-          <p>🎉🎉The Git successfully install in your computer🎉🎉</p>
+          <img className="git" src={gitinstallpage17} alt="" />
+          <p className="git-text">✔️Select Finish</p>
+          <p className="git-text">🎉🎉The Git successfully install in your computer🎉🎉</p>
         </div>
         <div>
           <h3>Step 3:</h3>
-          <p>Now Right click on any window page in your computer and Select "Open Git Bash here" </p>
+          <p className="git-text">Now Right click on any window page in your computer and Select "Open Git Bash here" </p>
           <img src={gitinstallpage18} alt="" />
         </div>
         <div>
-          <p>Now Git terminal is start in your computer</p>
-          <img src={gitinstallpage19} alt="" />
+          <p className="git-text">Now Git terminal is start in your computer</p>
+          <img className="git" src={gitinstallpage19} alt="" />
         </div>
         <div>
-          <p>Now, Check Git version type the command "git --version" </p>
-          <img src={gitinstallpage20} alt="" />
+          <p className="git-text">Now, Check Git version type the command "git --version" </p>
+          <img className="git" src={gitinstallpage20} alt="" />
         </div>
         <div>
           <h3>Step 4:</h3>
           <h3>Configure GitHub Credentials</h3>
-          <p>You can configure your local GitHub installation with credentials by using the following commands. Also, don't forget to add your own GitHub credentials for username and email address.</p>
-          <p>git config --global user.name "your github username" </p>
-          <img src={gitinstallpage21} alt="" />
-          <p></p>
+          <p className="git-text">You can configure your local GitHub installation with credentials by using the following commands. Also, don't forget to add your own GitHub credentials for username and email address.</p>
+          <p className="git-text">git config --global user.name "your github username" </p>
+          <img className="git" src={gitinstallpage21} alt="" />
         </div>
         <div>
-          <p>git config --global user.email "your email address"</p>
-          <img src={gitinstallpage22} alt="" />
-          <p>🎉🎉Successfully Set the Git Config in your Local Setup🎉🎉</p>
+          <p className="git-text">git config --global user.email "your email address"</p>
+          <img className="git" src={gitinstallpage22} alt="" />
+          <p className="git-text">🎉🎉Successfully Set the Git Config in your Local Setup🎉🎉</p>
         </div>
         <div className="backButton">
           <Button variant="outlined" onClick={()=>navigate('/blog')}>🔙</Button>
