@@ -17,7 +17,29 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-
+import gitdownloadpage from "./images/git/gitdownloadpage.png"
+import gitinstallpage1 from "./images/git/gitlocalsetup1.png"
+import gitinstallpage2 from "./images/git/gitlocalsetup2.png"
+import gitinstallpage3 from "./images/git/gitlocalsetup3.png"
+import gitinstallpage4 from "./images/git/gitlocalsetup4.png"
+import gitinstallpage5 from "./images/git/gitlocalsetup5.png"
+import gitinstallpage6 from "./images/git/gitlocalsetup6.png"
+import gitinstallpage7 from "./images/git/gitlocalsetup7.png"
+import gitinstallpage8 from "./images/git/gitlocalsetup8.png"
+import gitinstallpage9 from "./images/git/gitlocalsetup9.png"
+import gitinstallpage10 from "./images/git/gitlocalsetup10.png"
+import gitinstallpage11 from "./images/git/gitlocalsetup11.png"
+import gitinstallpage12 from "./images/git/gitlocalsetup12.png"
+import gitinstallpage13 from "./images/git/gitlocalsetup13.png"
+import gitinstallpage14 from "./images/git/gitlocalsetup14.png"
+import gitinstallpage15 from "./images/git/gitlocalsetup15.png"
+import gitinstallpage16 from "./images/git/gitlocalsetup16.png"
+import gitinstallpage17 from "./images/git/gitlocalsetup17.png"
+import gitinstallpage18 from "./images/git/gitlocalsetup18.png"
+import gitinstallpage19 from "./images/git/gitlocalsetup19.png"
+import gitinstallpage20 from "./images/git/gitlocalsetup20.png"
+import gitinstallpage21 from "./images/git/gitlocalsetup21.png"
+import gitinstallpage22 from "./images/git/gitlocalsetup22.png"
 
 export function Blog() {
   const navigate = useNavigate('')
@@ -142,6 +164,116 @@ export function GitLocalSetup(){
     <div className="Git-localSetup-container">
       <div className="blog-gitLocalSetup-title">
         <h3>How to install Git in Local Setup for Windows</h3>
+      </div>
+      <div className="blog-gitLocalSetup-contant">
+        <div>
+          <h3>You have to follow the following steps to install the Git & Set config local on your Windows</h3>
+        </div>
+        <div>
+          <h3>Step 1:</h3>
+          <p className="git-text">Visit the official Git website <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a> and download the Latest source Release. </p>
+          <img src={gitdownloadpage} alt="Git download page" />
+        </div>
+        <div>
+          <h3>Step 2:</h3>
+          <p>Now you need to install the Git installer on your PC. Double click on the Git installer.</p>
+          <img src={gitinstallpage1} alt="" />
+          <p>✔️Select Next</p>
+        </div>
+        <div>
+          <img src={gitinstallpage2} alt="" />
+          <p>✔️Select Next</p>
+        </div>
+        <div>
+          <img src={gitinstallpage3} alt="" />
+          <p>✔️Select Next</p>
+        </div>
+        <div>
+          <img src={gitinstallpage4} alt="" />
+          <p>✔️Select Next</p>
+        </div>
+        <div>
+          <img src={gitinstallpage5} alt="" />
+          <p>✔️Select Next</p>
+        </div>
+        <div>
+          <img src={gitinstallpage6} alt="" />
+          <p>✔️Select Next</p>
+        </div>
+        <div>
+          <img src={gitinstallpage7} alt="" />
+          <p>✔️Select Next</p>
+        </div>
+        <div>
+          <img src={gitinstallpage8} alt="" />
+          <p>✔️Select Next</p>
+        </div>
+        <div>
+          <img src={gitinstallpage9} alt="" />
+          <p>✔️Select Next</p>
+        </div>
+        <div>
+          <img src={gitinstallpage10} alt="" />
+          <p>✔️Select Next</p>
+        </div>
+        <div>
+          <img src={gitinstallpage11} alt="" />
+          <p>✔️Select Next</p>
+        </div>
+        <div>
+          <img src={gitinstallpage12} alt="" />
+          <p>✔️Select Next</p>
+        </div>
+        <div>
+          <img src={gitinstallpage13} alt="" />
+          <p>✔️Select Next</p>
+        </div>
+        <div>
+          <img src={gitinstallpage14} alt="" />
+          <p>✔️Select Next</p>
+        </div>
+        <div>
+          <img src={gitinstallpage15} alt="" />
+          <p>✔️Select Install</p>
+        </div>
+        <div>
+          <img src={gitinstallpage16} alt="" />
+          <p>Waiting for little bit time to installing process.</p>
+        </div>
+        <div>
+          <img src={gitinstallpage17} alt="" />
+          <p>✔️Select Finish</p>
+          <p>🎉🎉The Git successfully install in your computer🎉🎉</p>
+        </div>
+        <div>
+          <h3>Step 3:</h3>
+          <p>Now Right click on any window page in your computer and Select "Open Git Bash here" </p>
+          <img src={gitinstallpage18} alt="" />
+        </div>
+        <div>
+          <p>Now Git terminal is start in your computer</p>
+          <img src={gitinstallpage19} alt="" />
+        </div>
+        <div>
+          <p>Now, Check Git version type the command "git --version" </p>
+          <img src={gitinstallpage20} alt="" />
+        </div>
+        <div>
+          <h3>Step 4:</h3>
+          <h3>Configure GitHub Credentials</h3>
+          <p>You can configure your local GitHub installation with credentials by using the following commands. Also, don't forget to add your own GitHub credentials for username and email address.</p>
+          <p>git config --global user.name "your github username" </p>
+          <img src={gitinstallpage21} alt="" />
+          <p></p>
+        </div>
+        <div>
+          <p>git config --global user.email "your email address"</p>
+          <img src={gitinstallpage22} alt="" />
+          <p>🎉🎉Successfully Set the Git Config in your Local Setup🎉🎉</p>
+        </div>
+        <div className="backButton">
+          <Button variant="outlined" onClick={()=>navigate('/blog')}>🔙</Button>
+        </div>
       </div>
     </div>
   );
